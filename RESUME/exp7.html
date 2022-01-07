@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+   function palindrom(string){
+        
+    var stringtoarray = string.split('');
+
+    var reverseofarray = stringtoarray.reverse();
+    var reverseString = reverseofarray.join('');
+
+    if(string == reverseString) {
+          document.write('It is a palindrome');
+       }
+    else {
+          document.write('It is not a palindrome');
+     }
+     }
+     var array=["sir","mam","orange"];
+     for(var i=0;i<array.length;i++)
+     {
+         palindrom(array[i]);
+         document.write("<br>");
+     }
+   
+ </script>
+
+</body>
+</html>

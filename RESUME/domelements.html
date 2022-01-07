@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <h1>DOM Selectors</h1>
+
+  <div id="byid">
+  <p>HTML element by tag name</p>
+  <p><b>getElementsByTagName</b></p>
+  </div>
+  <p><b>getElementById</b>  </p>
+  <p id="byid2"></p>
+  <p class="byclass"></p>
+  <p class="byclass"><b> getElementbyclassname</b> </p>
+  <p id="byid2"></p>
+
+  
+  <script>
+  var x = document.getElementById("byid");
+  var y = x.getElementsByTagName("p");
+  
+  document.getElementById("byid2").innerHTML = y[0].innerHTML;
+   var z=document.getElementsByClassName("byclass")
+document.getElementById("byid2").innerHTML = "This is example for "+z[0].innerHTML;
+   var w=document.querySelectorAll("p.byclass");
+   document.getElementById("byid2").innerHTML="<b> querySelectorAll </b>";
+   
+  </script>
+  
+</body>
+</html>
